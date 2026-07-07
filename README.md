@@ -2,7 +2,7 @@
 
 SEN202 Weekend 1 Development Assignment (submitted to Dr. O. O. Ajayi)
 
-A mini web platform that lets students, staff, and off-campus landlords quickly report
+A mini web platform that is designed to lets students, staff, and off-campus landlords quickly report
 campus security incidents (theft, assault, stabbing, rape, murder, kidnapping, etc.),
 optionally anonymously, and view a live incident feed.
 

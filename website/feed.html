@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Incident Feed — SIM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">SIM</span>
+      <span class="name">Security Incident Mapping</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="report.html">Report Incident</a>
+      <a href="feed.html" class="active">Incident Feed</a>
+      <a href="about.html">About &amp; Emergency</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <h2>Live incident feed</h2>
+    <p class="sub">Recent reports from the campus community, most recent first.</p>
+
+    <div class="filters">
+      <select id="filter-category">
+        <option value="all">All categories</option>
+        <option value="Theft / Stealing">Theft / Stealing</option>
+        <option value="Assault / Stabbing">Assault / Stabbing</option>
+        <option value="Sexual Assault">Sexual Assault</option>
+        <option value="Kidnapping">Kidnapping</option>
+        <option value="Cultism-related Violence">Cultism-related Violence</option>
+        <option value="Suspicious Activity">Suspicious Activity</option>
+        <option value="Other">Other</option>
+      </select>
+      <select id="filter-status">
+        <option value="all">All statuses</option>
+        <option value="Pending">Pending</option>
+        <option value="Verified">Verified</option>
+        <option value="Escalated">Escalated</option>
+      </select>
+    </div>
+
+    <div id="incident-list"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>SIM — Security Incident Mapping · SEN202 Weekend Dev, Weekend 1</span>
+    <span>Prototype for academic submission — not a live emergency service</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

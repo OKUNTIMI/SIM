@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SIM — Security Incident Mapping</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">SIM</span>
+      <span class="name">Security Incident Mapping</span>
+    </a>
+    <nav>
+      <a href="index.html" class="active">Home</a>
+      <a href="report.html">Report Incident</a>
+      <a href="feed.html">Incident Feed</a>
+      <a href="about.html">About &amp; Emergency</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Campus Safety Prototype — SEN202</div>
+    <h1>Report a security incident before it becomes tomorrow's headline.</h1>
+    <p class="lead">
+      SIM lets students, staff, and off-campus landlords report theft, assault, and other
+      security incidents in minutes — anonymously if needed — and see what's happening
+      around campus in real time.
+    </p>
+    <div class="cta-row">
+      <a href="report.html" class="btn btn-primary">Report an Incident</a>
+      <a href="feed.html" class="btn btn-ghost">View Live Feed</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="num" id="stat-total">0</div>
+        <div class="label">Incidents logged</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="stat-verified">0</div>
+        <div class="label">Verified / escalated</div>
+      </div>
+      <div class="stat">
+        <div class="num" id="stat-anon">0</div>
+        <div class="label">Reported anonymously</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>How it works</h2>
+    <p class="sub">Three steps, no complexity — built for people in a hurry.</p>
+    <div class="cards">
+      <div class="card">
+        <div class="cat">Step 1</div>
+        <h3>Report</h3>
+        <p>Pick a category, describe what happened, and drop a pin on the location — anonymously if you prefer.</p>
+      </div>
+      <div class="card">
+        <div class="cat">Step 2</div>
+        <h3>Verify</h3>
+        <p>Campus Security reviews the report and marks it Verified, or escalates serious cases to law enforcement.</p>
+      </div>
+      <div class="card">
+        <div class="cat">Step 3</div>
+        <h3>Stay aware</h3>
+        <p>Everyone sees a live, filterable feed of verified incidents — no more relying on rumours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>SIM — Security Incident Mapping · SEN202 Weekend Dev, Weekend 1</span>
+    <span>Prototype for academic submission — not a live emergency service</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

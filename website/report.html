@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Report an Incident — SIM</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <span class="mark">SIM</span>
+      <span class="name">Security Incident Mapping</span>
+    </a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="report.html" class="active">Report Incident</a>
+      <a href="feed.html">Incident Feed</a>
+      <a href="about.html">About &amp; Emergency</a>
+    </nav>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="case-stamp">NEW CASE — UNFILED</div>
+    <h2>Report a security incident</h2>
+    <p class="sub">Takes about a minute. You can report anonymously — we'll never show your name if you choose to.</p>
+
+    <form id="report-form" class="form-card">
+      <input type="hidden" id="category-value" value="">
+
+      <div class="field">
+        <label>Incident category</label>
+        <div class="chip-group">
+          <div class="chip" data-category="Theft / Stealing">Theft / Stealing</div>
+          <div class="chip" data-category="Assault / Stabbing">Assault / Stabbing</div>
+          <div class="chip" data-category="Sexual Assault">Sexual Assault</div>
+          <div class="chip" data-category="Kidnapping">Kidnapping</div>
+          <div class="chip" data-category="Cultism-related Violence">Cultism-related Violence</div>
+          <div class="chip" data-category="Suspicious Activity">Suspicious Activity</div>
+          <div class="chip" data-category="Other">Other</div>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="description">What happened?</label>
+        <textarea id="description" placeholder="Describe the incident: who was involved, what you saw, anything that could help Campus Security respond."></textarea>
+      </div>
+
+      <div class="field">
+        <label for="location">Location</label>
+        <input type="text" id="location" placeholder="e.g. Back Gate, Female Hostel Block C, Ale Street lodge">
+        <div class="hint">Be as specific as you can — a nearby landmark is fine.</div>
+      </div>
+
+      <div class="field">
+        <label for="incident-datetime">Date &amp; time it happened</label>
+        <input type="datetime-local" id="incident-datetime">
+      </div>
+
+      <div class="field">
+        <label for="evidence">Photo / video evidence (optional)</label>
+        <input type="file" id="evidence" accept="image/*,video/*">
+      </div>
+
+      <div class="field">
+        <label for="reporter-name">Your name (optional)</label>
+        <input type="text" id="reporter-name" placeholder="Leave blank if reporting anonymously">
+      </div>
+
+      <div class="field check-row">
+        <input type="checkbox" id="anonymous-check">
+        <label for="anonymous-check" style="margin:0;">Report this anonymously</label>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit report</button>
+      <div id="form-msg" class="form-msg"></div>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <span>SIM — Security Incident Mapping · SEN202 Weekend Dev, Weekend 1</span>
+    <span>Prototype for academic submission — not a live emergency service</span>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

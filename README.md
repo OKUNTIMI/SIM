@@ -8,26 +8,6 @@ optionally anonymously, and view a live incident feed.
 
 ## Repository structure
 
-```
-SIM-Project/
-├── README.md
-├── website/                         → the mini web application (open website/index.html)
-│   ├── index.html                   home page + live stats
-│   ├── report.html                  incident report form
-│   ├── feed.html                    live incident feed with filters
-│   ├── about.html                   about + emergency contacts
-│   ├── style.css
-│   └── app.js
-└── docs/
-    ├── Google_Form_Questionnaire_Design.md    → questionnaire design (build in Google Forms)
-    ├── simulated_survey_responses.csv          → sample AI-generated responses to the questionnaire
-    ├── Ishikawa_Fishbone_Diagram.drawio         → open in app.diagrams.net (draw.io)
-    ├── Ishikawa_Fishbone_Diagram_preview.png    → static preview image
-    ├── UseCase_Diagram.drawio                   → open in app.diagrams.net (draw.io)
-    ├── UseCase_Diagram_preview.png              → static preview image
-    ├── SIM_SRS_Document.docx                    → Software Requirements Specification
-    └── SIM_SRS_Document.pdf                     → same SRS, PDF version for quick viewing
-```
 
 ## How to run the mini website
 
@@ -50,11 +30,3 @@ Go to [app.diagrams.net](https://app.diagrams.net) → File → Open From → De
 `Ishikawa_Fishbone_Diagram.drawio` or `UseCase_Diagram.drawio`. PNG previews are included
 for quick viewing without draw.io.
 
-## Assignment checklist
-
-- [x] Google Form questionnaire design (students, staff, landlords) — `docs/Google_Form_Questionnaire_Design.md`
-- [x] Simulated AI-generated questionnaire responses — `docs/simulated_survey_responses.csv`
-- [x] Ishikawa (Fishbone) problem analysis, built for draw.io — `docs/Ishikawa_Fishbone_Diagram.drawio`
-- [x] Mini web interface — `website/`
-- [x] Use case diagram(s) — `docs/UseCase_Diagram.drawio`
-- [x] SRS document (functional + non-functional requirements, component interactions) — `docs/SIM_SRS_Document.docx`
